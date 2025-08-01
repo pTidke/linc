@@ -49,15 +49,15 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <HeroHeader />
-      <main className="flex-1 bg-background py-24 px-12 mt-10 md:px-12 lg:px-12 space-y-24 max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-16 text-[#BA0C2F] font-[Poppins]">
-          Our Projects
+      <main className="flex-1 bg-background py-28 mt-4 px-14 md:px-12 lg:px-24 max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
+          Projects
         </h1>
 
         {projects.map((project, i) => (
           <motion.div
             key={project.title}
-            className={`flex flex-col md:flex-row items-center gap-10 ${
+            className={`flex flex-col p-10 md:flex-row items-center gap-10 ${
               i % 2 === 1 ? "md:flex-row-reverse" : ""
             }`}
             variants={fadeVariant}
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             {/* Image */}
-            <div className="w-full md:w-5/12">
+            <div className="w-full md:w-3/4">
               <Image
                 src={project.image || placeholderImage}
                 alt={project.title}

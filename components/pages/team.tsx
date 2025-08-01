@@ -11,11 +11,8 @@ export default function PeoplePage() {
     <div className="min-h-screen flex flex-col">
       <HeroHeader />
 
-      <main className="flex-1 bg-background py-28 px-8 md:px-12 lg:px-20">
-        <h1
-          className="text-4xl font-bold text-center mb-12 text-[#BA0C2F]"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
+      <main className="flex-1 bg-background py-28 mt-4 px-14 md:px-12 lg:px-24 max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
           Our Team
         </h1>
 

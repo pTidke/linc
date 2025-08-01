@@ -9,12 +9,9 @@ export default function JoinTeam() {
     <div className="min-h-screen flex flex-col">
       <HeroHeader />
 
-      <main className="flex-1 bg-background pt-18 px-10 mt-0 md:px-12 lg:px-24">
+      <main className="flex-1 bg-background py-28 mt-4 px-14 md:px-12 lg:px-24 max-w-6xl mx-auto">
         <div className="max-w-4xl mx-auto text-center">
-          <h1
-            className="text-3xl sm:text-4xl mt-12 font-bold text-[#BA0C2F] mb-6"
-            style={{ fontFamily: "Poppins, sans-serif" }}
-          >
+          <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
             Join the Team
           </h1>
           <p className="text-gray-700 text-sm md:text-lg mb-10 leading-relaxed text-justify">
