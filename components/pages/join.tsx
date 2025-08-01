@@ -51,7 +51,7 @@ export default function JoinTeam() {
                 >
                   jbae3@sdsu.edu
                 </a>{" "}
-                with your CV and a brief explanation of why you're a great fit for LINC.
+                with your CV and a brief explanation of why you&apos;re a great fit for LINC.
               </p>
             </div>
           </div>
