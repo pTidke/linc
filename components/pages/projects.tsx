@@ -14,7 +14,7 @@ const projects = [
       "Mental health challenges such as depression, anxiety, and chronic stress are often hidden but more damaging to construction workers than any physical accident or injury. This project creates an AI-powered mental health support system using LLMs to offer compassionate, confidential, and 24/7 assistance tailored to the unique stressors of the construction industry.",
     image: "/1.jpg",
     fields: ["Construction Engineering", "Computer Science", "Psychiatry"],
-    image_credits: `Photo by <a href="https://unsplash.com/@emilyunderworld" target="_blank" rel="noopener noreferrer">Emily Underworld</a> on <a href="https://unsplash.com/photos/a-tablet-with-the-words-mental-health-matters-on-it-Ko3EMBFggok" target="_blank" rel="noopener noreferrer">Unsplash</a>`
+    image_credits: `Photo by <a href="https://unsplash.com/@emilyunderworld" target="_blank" rel="noopener noreferrer">Emily Underworld</a> on <a href="https://unsplash.com/photos/a-tablet-with-the-words-mental-health-matters-on-it-Ko3EMBFggok" target="_blank" rel="noopener noreferrer">Unsplash</a>`,
   },
   {
     title:
@@ -28,7 +28,7 @@ const projects = [
       "Nutritional Science",
       "Computer Science",
     ],
-    image_credits: `Photo by <a href="https://unsplash.com/@lukechesser" target="_blank" rel="noopener noreferrer">Luke Chesser</a> on <a href="https://unsplash.com/photos/person-clicking-apple-watch-smartwatch-rCOWMC8qf8A" target="_blank" rel="noopener noreferrer">Unsplash</a>`
+    image_credits: `Photo by <a href="https://unsplash.com/@lukechesser" target="_blank" rel="noopener noreferrer">Luke Chesser</a> on <a href="https://unsplash.com/photos/person-clicking-apple-watch-smartwatch-rCOWMC8qf8A" target="_blank" rel="noopener noreferrer">Unsplash</a>`,
   },
   {
     title: "Semi-Automated Teleoperation for Excavators",
@@ -36,7 +36,7 @@ const projects = [
       "To reduce risk and improve control in hazardous environments, this project creates a semi-automated teleoperation system that blends eye-tracking, ML, and human-in-the-loop robotics for safer, intuitive excavator control.",
     image: "/3.jpg",
     fields: ["Cognitive Science", "Robotics", "Construction Engineering"],
-    image_credits: `Photo by <a href="https://unsplash.com/@eesofuffzich" target="_blank" rel="noopener noreferrer">EESOFUFFZICH</a> on <a href="https://unsplash.com/photos/yellow-and-black-excavator-on-brown-sand-during-daytime-bGMyTnSlYvE" target="_blank" rel="noopener noreferrer">Unsplash</a>`
+    image_credits: `Photo by <a href="https://unsplash.com/@eesofuffzich" target="_blank" rel="noopener noreferrer">EESOFUFFZICH</a> on <a href="https://unsplash.com/photos/yellow-and-black-excavator-on-brown-sand-during-daytime-bGMyTnSlYvE" target="_blank" rel="noopener noreferrer">Unsplash</a>`,
   },
 ];
 
@@ -49,8 +49,7 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <HeroHeader />
-        <main className="flex-1 bg-background py-24 px-12 mt-10 md:px-12 lg:px-12 space-y-24 max-w-6xl mx-auto">
-
+      <main className="flex-1 bg-background py-24 px-12 mt-10 md:px-12 lg:px-12 space-y-24 max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-16 text-[#BA0C2F] font-[Poppins]">
           Our Projects
         </h1>
@@ -83,7 +82,9 @@ export default function ProjectsPage() {
               <h2 className="text-2xl font-semibold text-gray-900 mb-3 font-[Poppins]">
                 {project.title}
               </h2>
-              <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
+              <p className="text-gray-700 mb-4 text-sm">
+                {project.description}
+              </p>
 
               <div className="flex flex-wrap gap-2 mb-2">
                 {project.fields.map((field, idx) => (

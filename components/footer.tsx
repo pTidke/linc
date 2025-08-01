@@ -74,114 +74,113 @@ export default function FooterSection() {
           </div>
         </div>
         <div className="relative overflow-hidden whitespace-nowrap w-full mt-10">
-  <div className="flex animate-marquee w-max space-x-12 text-[11px] text-gray-400">
-    {/* Repeat content twice for seamless scroll */}
-    {[...Array(2)].map((_, idx) => (
-      <div key={idx} className="flex space-x-6">
-        <span>
-          Construction Engineering –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/construction"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            Freepik
-          </a>
-        </span>
-        <span>
-          Computer Science –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/code"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            juicy_fish
-          </a>
-        </span>
-        <span>
-          Human Sensing –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/sensor"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            Flat Icons
-          </a>
-        </span>
-        <span>
-          Neuroscience –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/neuroscience"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            SBTS2018
-          </a>
-        </span>
-        <span>
-          Cognitive Science –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/cognitive-training"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            Dewi Sari
-          </a>
-        </span>
-        <span>
-          Social Psychology –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/psychology"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            Flat Icons
-          </a>
-        </span>
-        <span>
-          Nutritional Science –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/nutrition"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            Freepik
-          </a>
-        </span>
-        <span>
-          Psychiatry –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/psychiatry"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            Freepik
-          </a>
-        </span>
-        <span>
-          Robotics –{" "}
-          <a
-            href="https://www.flaticon.com/free-icons/robot"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-[#BA0C2F]"
-          >
-            Flat Icons
-          </a>
-        </span>
-      </div>
-    ))}
-  </div>
-</div>
-
+          <div className="flex animate-marquee w-max space-x-12 text-[11px] text-gray-400">
+            {/* Repeat content twice for seamless scroll */}
+            {[...Array(2)].map((_, idx) => (
+              <div key={idx} className="flex space-x-6">
+                <span>
+                  Construction Engineering –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/construction"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    Freepik
+                  </a>
+                </span>
+                <span>
+                  Computer Science –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    juicy_fish
+                  </a>
+                </span>
+                <span>
+                  Human Sensing –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/sensor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    Flat Icons
+                  </a>
+                </span>
+                <span>
+                  Neuroscience –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/neuroscience"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    SBTS2018
+                  </a>
+                </span>
+                <span>
+                  Cognitive Science –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/cognitive-training"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    Dewi Sari
+                  </a>
+                </span>
+                <span>
+                  Social Psychology –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/psychology"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    Flat Icons
+                  </a>
+                </span>
+                <span>
+                  Nutritional Science –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/nutrition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    Freepik
+                  </a>
+                </span>
+                <span>
+                  Psychiatry –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/psychiatry"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    Freepik
+                  </a>
+                </span>
+                <span>
+                  Robotics –{" "}
+                  <a
+                    href="https://www.flaticon.com/free-icons/robot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-[#BA0C2F]"
+                  >
+                    Flat Icons
+                  </a>
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   );

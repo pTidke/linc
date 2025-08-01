@@ -18,31 +18,62 @@ export default function JoinTeam() {
             Join the Team
           </h1>
           <p className="text-gray-700 text-sm md:text-lg mb-10 leading-relaxed text-justify">
-            We are looking for a <strong className="text-[#BA0C2F]">fully-funded Ph.D. student</strong> to join LINC starting September 2026. The position is part of a <strong>joint doctoral program</strong> between <strong>SDSU</strong> and <strong>UCSD</strong>. Come explore human-centered construction research at the intersection of <strong>engineering, neuroscience, AI, psychology, and robotics</strong>.
+            We are looking for a{" "}
+            <strong className="text-[#BA0C2F]">
+              fully-funded Ph.D. student
+            </strong>{" "}
+            to join LINC starting September 2026. The position is part of a{" "}
+            <strong>joint doctoral program</strong> between{" "}
+            <strong>SDSU</strong> and <strong>UCSD</strong>. Come explore
+            human-centered construction research at the intersection of{" "}
+            <strong>
+              engineering, neuroscience, AI, psychology, and robotics
+            </strong>
+            .
           </p>
 
           <div className="text-left bg-white p-6 rounded-xl shadow-md space-y-6 border border-gray-200">
             <div>
-              <h2 className="text-md font-semibold text-[#BA0C2F] mb-2">Required Qualifications:</h2>
+              <h2 className="text-md font-semibold text-[#BA0C2F] mb-2">
+                Required Qualifications:
+              </h2>
               <ul className="space-y-2 text-sm text-gray-800 list-disc list-inside">
-                <li><strong>Interdisciplinary Curiosity</strong> (Top priority)</li>
-                <li>Eagerness to connect theory with real-world challenges in construction, health, or technology</li>
+                <li>
+                  <strong>Interdisciplinary Curiosity</strong> (Top priority)
+                </li>
+                <li>
+                  Eagerness to connect theory with real-world challenges in
+                  construction, health, or technology
+                </li>
                 <li>Collaboration and Communication Skills</li>
-                <li>Technical Proficiency (e.g., ML, LLM, wearable sensing, robotics, etc.)</li>
+                <li>
+                  Technical Proficiency (e.g., ML, LLM, wearable sensing,
+                  robotics, etc.)
+                </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="text-md font-semibold text-[#BA0C2F] mb-2">Sample Research Projects:</h2>
+              <h2 className="text-md font-semibold text-[#BA0C2F] mb-2">
+                Sample Research Projects:
+              </h2>
               <ul className="space-y-2 text-sm text-gray-800 list-disc list-inside">
-                <li>LLM-based mental health support for construction workers</li>
-                <li>Psychophysiological monitoring for safety and productivity</li>
-                <li>Cognitive & emotional mechanisms in human-robot collaboration</li>
+                <li>
+                  LLM-based mental health support for construction workers
+                </li>
+                <li>
+                  Psychophysiological monitoring for safety and productivity
+                </li>
+                <li>
+                  Cognitive & emotional mechanisms in human-robot collaboration
+                </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="text-md font-semibold text-[#BA0C2F] mb-2">Application Instructions:</h2>
+              <h2 className="text-md font-semibold text-[#BA0C2F] mb-2">
+                Application Instructions:
+              </h2>
               <p className="text-gray-800 text-sm">
                 Email Dr. JuHyeon Bae at{" "}
                 <a
@@ -51,7 +82,8 @@ export default function JoinTeam() {
                 >
                   jbae3@sdsu.edu
                 </a>{" "}
-                with your CV and a brief explanation of why you&apos;re a great fit for LINC.
+                with your CV and a brief explanation of why you&apos;re a great
+                fit for LINC.
               </p>
             </div>
           </div>

@@ -42,8 +42,8 @@ export default function PeoplePage() {
                 Director, Assistant Professor
               </p>
               <p className="text-sm text-gray-500 mt-3">
-                Department of Civil, Construction, and Environmental Engineering,
-                San Diego State University
+                Department of Civil, Construction, and Environmental
+                Engineering, San Diego State University
               </p>
               <div className="text-left mt-4">
                 <p className="text-sm font-medium text-gray-700 mb-1">
@@ -51,10 +51,12 @@ export default function PeoplePage() {
                 </p>
                 <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
                   <li>
-                    Ph.D. in Civil Engineering, University of Michigan – Ann Arbor, 2024
+                    Ph.D. in Civil Engineering, University of Michigan – Ann
+                    Arbor, 2024
                   </li>
                   <li>
-                    Graduate Certificate in Computational Neuroscience, UMich, 2024
+                    Graduate Certificate in Computational Neuroscience, UMich,
+                    2024
                   </li>
                   <li>M.S. in Civil Engineering, Hanyang University, 2020</li>
                   <li>B.S. in Civil Engineering, Hanyang University, 2018</li>
@@ -93,15 +95,24 @@ export default function PeoplePage() {
                 M.S. Student, Graduate Research Assistant
               </p>
               <p className="text-sm text-gray-500 mt-3">
-                Project: LLM-Based Mental Health Support for Construction Workers
+                Project: LLM-Based Mental Health Support for Construction
+                Workers
               </p>
 
               {/* Education Section */}
               <div className="text-left mt-4">
-                <p className="text-sm font-medium text-gray-700 mb-1">Education:</p>
+                <p className="text-sm font-medium text-gray-700 mb-1">
+                  Education:
+                </p>
                 <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
-                  <li>M.S. in Construction Engineering, San Diego State University (In Progress)</li>
-                  <li>B.Tech in Computer Science & Enginerring, IIITDM Jabalpur, India</li>
+                  <li>
+                    M.S. in Construction Engineering, San Diego State University
+                    (In Progress)
+                  </li>
+                  <li>
+                    B.Tech in Computer Science & Enginerring, IIITDM Jabalpur,
+                    India
+                  </li>
                 </ul>
               </div>
 
@@ -117,15 +128,15 @@ export default function PeoplePage() {
           </div>
         </div>
         <div className="flex justify-center mt-8">
-            <Link href="/join">
-              <button
-                className="relative mt-10 px-6 py-3 rounded-full font-semibold text-white bg-[#BA0C2F] shadow-md hover:shadow-lg transition-all duration-300 hover:bg-[#a50c28] hover:scale-85
+          <Link href="/join">
+            <button
+              className="relative mt-10 px-6 py-3 rounded-full font-semibold text-white bg-[#BA0C2F] shadow-md hover:shadow-lg transition-all duration-300 hover:bg-[#a50c28] hover:scale-85
                           before:absolute before:inset-0 before:rounded-full before:blur-md before:opacity-20 before:bg-[#BA0C2F] animate-pulse"
-              >
-                Join the Team
-              </button>
-            </Link>
-          </div>
+            >
+              Join the Team
+            </button>
+          </Link>
+        </div>
       </main>
 
       <Footer />

@@ -74,14 +74,16 @@ export default function PublicationsPage() {
                 {entry.doi && (
                   <>
                     {" "}
-                    (<a
+                    (
+                    <a
                       href={`https://doi.org/${entry.doi}`}
                       className="text-[#BA0C2F] underline hover:text-[#90001f]"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       DOI: {entry.doi}
-                    </a>)
+                    </a>
+                    )
                   </>
                 )}
               </li>
@@ -101,14 +103,16 @@ export default function PublicationsPage() {
                 {entry.doi && (
                   <>
                     {" "}
-                    (<a
+                    (
+                    <a
                       href={`https://doi.org/${entry.doi}`}
                       className="text-[#BA0C2F] underline hover:text-[#90001f]"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       DOI: {entry.doi}
-                    </a>)
+                    </a>
+                    )
                   </>
                 )}
               </li>

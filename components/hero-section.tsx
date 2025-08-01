@@ -6,17 +6,10 @@ import Image from "next/image";
 import HeroHeader from "@/components/hero8-header";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
-import InteractiveNetwork from "./InteractiveNetwork";
-import TextTrail from "@/components/TextTrail";
-import { AnimatedBeam } from "@/components/magicui/animated-beam";
-import { AnimatedBeamDemo } from "./AnimatedBeamDemo";
-import { LogoIcon } from "@/components/logo";
 import { cn } from "@/lib/utils";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-
-import CardSwap, { Card } from "@/components/CardSwap";
 
 const IntegrationCard = ({
   children,
