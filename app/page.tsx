@@ -6,9 +6,9 @@ import "@fontsource/inter/400.css";   // for p (regular paragraph)
 
 export default function Home() {
   return (
-    <>
+    <section id="home">
       <HeroSection />
       <FooterSection />
-    </>
+    </section>
   );
 }

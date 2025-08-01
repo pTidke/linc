@@ -8,13 +8,14 @@ import Link from "next/dist/client/link";
 
 export default function PeoplePage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div id="team" className="min-h-screen flex flex-col">
       <HeroHeader />
 
-      <main className="flex-1 bg-background py-28 mt-4 px-14 md:px-12 lg:px-24 max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
-          Our Team
-        </h1>
+      <main className="flex-1 bg-background py-28 mt-4 px-6 md:px-12 lg:px-24 max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
+            Our Team
+          </h1>
 
         <div className="grid gap-12 md:grid-cols-2 max-w-6xl mx-auto">
           {/* Director */}
@@ -59,12 +60,35 @@ export default function PeoplePage() {
                   <li>B.S. in Civil Engineering, Hanyang University, 2018</li>
                 </ul>
               </div>
-              <div className="mt-4">
+              <div className="mt-8 flex justify-center space-x-4">
+                {/* LinkedIn */}
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/juhyeon-bae-38162122b/"
                   className="inline-flex items-center text-[#BA0C2F] text-sm hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Linkedin size={16} className="mr-1" /> LinkedIn
+                  <Linkedin size={16} className="mr-1" />
+                  LinkedIn
+                </a>
+
+                {/* Google Scholar */}
+                <a
+                  href="https://scholar.google.com/citations?user=QBGvcr4AAAAJ&hl=en&oi=ao"
+                  className="inline-flex items-center text-[#BA0C2F] text-sm hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {/* Scholar Icon SVG */}
+                  <svg
+                    className="w-4 h-4 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    fill="currentColor"
+                  >
+                    <path d="M24 4L4 20l20 16 20-16L24 4zm0 3.9l15.4 12.4L24 33.4 8.6 20.3 24 7.9zM14 28v4h20v-4H14z" />
+                  </svg>
+                  Google Scholar
                 </a>
               </div>
             </div>
@@ -115,7 +139,7 @@ export default function PeoplePage() {
 
               <div className="mt-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/ptidke9/"
                   className="inline-flex items-center text-[#BA0C2F] text-sm hover:underline"
                 >
                   <Linkedin size={16} className="mr-1" /> LinkedIn
@@ -133,6 +157,7 @@ export default function PeoplePage() {
               Join the Team
             </button>
           </Link>
+        </div>
         </div>
       </main>
 

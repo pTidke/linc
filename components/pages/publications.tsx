@@ -55,7 +55,7 @@ const conferencePapers = [
 
 export default function PublicationsPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div id="publications" className="min-h-screen flex flex-col">
       <HeroHeader />
       <main className="flex-1 bg-background py-28 mt-4 px-14 md:px-12 lg:px-24 max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
@@ -67,7 +67,7 @@ export default function PublicationsPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-6 font-[Poppins]">
             Refereed Journal Articles
           </h2>
-          <ul className="space-y-5 text-sm leading-relaxed text-gray-800 list-disc list-inside">
+          <ul className="space-y-5 text-sm text-justify leading-relaxed text-gray-800 list-disc list-inside">
             {journalArticles.map((entry, idx) => (
               <li key={idx}>
                 <span dangerouslySetInnerHTML={{ __html: entry.text }} />
@@ -96,7 +96,7 @@ export default function PublicationsPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-6 font-[Poppins]">
             Refereed Conference Proceedings
           </h2>
-          <ul className="space-y-5 text-sm leading-relaxed text-gray-800 list-disc list-inside">
+          <ul className="space-y-5 text-sm text-justify leading-relaxed text-gray-800 list-disc list-inside">
             {conferencePapers.map((entry, idx) => (
               <li key={idx}>
                 <span dangerouslySetInnerHTML={{ __html: entry.text }} />

@@ -6,10 +6,10 @@ import { Mail } from "lucide-react";
 
 export default function JoinTeam() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div id="join" className="min-h-screen flex flex-col">
       <HeroHeader />
 
-      <main className="flex-1 bg-background py-28 mt-4 px-14 md:px-12 lg:px-24 max-w-6xl mx-auto">
+      <main className="flex-1 bg-background py-28 mt-4 px-12 md:px-12 lg:px-24 max-w-6xl mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
             Join the Team

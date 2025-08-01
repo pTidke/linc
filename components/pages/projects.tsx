@@ -47,66 +47,71 @@ const fadeVariant = {
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      id="projects"
+      className="scroll-offset-anchor min-h-screen flex flex-col"
+    >
       <HeroHeader />
-      <main className="flex-1 bg-background py-28 mt-4 px-14 md:px-12 lg:px-24 max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
-          Projects
-        </h1>
+      <main className="flex-1 bg-background py-28 mt-4 px-4 md:px-4 lg:px-4 max-w-8xl mx-auto">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl font-bold text-[#BA0C2F] mb-12 text-center font-[Poppins]">
+            Projects
+          </h1>
 
-        {projects.map((project, i) => (
-          <motion.div
-            key={project.title}
-            className={`flex flex-col p-10 md:flex-row items-center gap-10 ${
-              i % 2 === 1 ? "md:flex-row-reverse" : ""
-            }`}
-            variants={fadeVariant}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            {/* Image */}
-            <div className="w-full md:w-3/4">
-              <Image
-                src={project.image || placeholderImage}
-                alt={project.title}
-                width={300}
-                height={220}
-                className="rounded-lg object-cover w-full shadow"
-              />
-            </div>
-
-            {/* Text */}
-            <div className="w-full md:w-4/3">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-3 font-[Poppins]">
-                {project.title}
-              </h2>
-              <p className="text-gray-700 mb-4 text-sm">
-                {project.description}
-              </p>
-
-              <div className="flex flex-wrap gap-2 mb-2">
-                {project.fields.map((field, idx) => (
-                  <span
-                    key={idx}
-                    className="px-2 py-1 text-xs bg-[#BA0C2F]/10 text-[#BA0C2F] rounded-full"
-                  >
-                    {field}
-                  </span>
-                ))}
+          {projects.map((project, i) => (
+            <motion.div
+              key={project.title}
+              className={`flex flex-col p-10 md:flex-row items-center gap-10 ${
+                i % 2 === 1 ? "md:flex-row-reverse" : ""
+              }`}
+              variants={fadeVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              {/* Image */}
+              <div className="w-full md:w-3/4">
+                <Image
+                  src={project.image || placeholderImage}
+                  alt={project.title}
+                  width={300}
+                  height={220}
+                  className="rounded-lg object-cover w-full shadow"
+                />
               </div>
 
-              {/* Image credits */}
-              {project.image_credits && (
-                <p
-                  className="text-xs ml-2 text-gray-400"
-                  dangerouslySetInnerHTML={{ __html: project.image_credits }}
-                />
-              )}
-            </div>
-          </motion.div>
-        ))}
+              {/* Text */}
+              <div className="w-full md:w-4/3">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-3 font-[Poppins]">
+                  {project.title}
+                </h2>
+                <p className="text-gray-700 text-justify mb-4 text-sm">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {project.fields.map((field, idx) => (
+                    <span
+                      key={idx}
+                      className="px-2 py-1 text-xs bg-[#BA0C2F]/10 text-[#BA0C2F] rounded-full"
+                    >
+                      {field}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Image credits */}
+                {project.image_credits && (
+                  <p
+                    className="text-xs ml-2 text-gray-400"
+                    dangerouslySetInnerHTML={{ __html: project.image_credits }}
+                  />
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </main>
       <Footer />
     </div>

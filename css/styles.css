@@ -65,15 +65,7 @@ canvas {
   animation: wobble 0.6s ease-in-out infinite;
 }
 
-/* body {
-  margin: 0;
-  background: #111;
-  font-family: sans-serif;
-  overflow: hidden;
+/* Ensure sections with IDs aren't hidden under fixed navbar */
+[id] {
+  scroll-margin-top: 6rem; /* or adjust to your actual navbar height */
 }
-
-.content {
-  pointer-events: none;
-  user-select: none;
-  font-family: sans-serif;
-} */

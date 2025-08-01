@@ -295,7 +295,7 @@ export default function HeroSection() {
                 </p>
 
                 <div className="mt-10 flex flex-row flex-wrap gap-4 justify-center lg:justify-start">
-                  <Link href="/research">
+                  <Link href="/projects">
                     <Button className="bg-[#BA0C2F] text-white hover:bg-[#a50c28] transition-colors duration-200 px-6 py-3 text-sm font-semibold rounded-full">
                       Explore Research
                     </Button>
