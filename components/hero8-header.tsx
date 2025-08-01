@@ -1,94 +1,118 @@
-"use client";
-import Link from "next/link";
-import { Logo } from "./logo";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import React from "react";
-import { ModeToggle } from "./mode-toggle";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
-const menuItems = [
-  { name: "Features", href: "#link" },
-  { name: "Solution", href: "#link" },
-  { name: "Pricing", href: "#link" },
-  { name: "About", href: "#link" },
-];
+const HeroHeader = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-export const HeroHeader = () => {
-  const [menuState, setMenuState] = React.useState(false);
   return (
-    <header>
-      <nav
-        data-state={menuState && "active"}
-        className="bg-background/50 fixed z-20 w-full border-b backdrop-blur-3xl"
-      >
-        <div className="mx-auto max-w-6xl px-6 transition-all duration-300">
-          <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
-            <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
+    <nav className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 w-24/28 max-w-7xl">
+      <div className="bg-white/10 backdrop-blur-xl border border-black/10 rounded-xl md:rounded-full px-5 py-0.5 shadow-sm font-weight-semibold">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-left space-x-0 text-black font-bold text-3xl">
+            <Link href="/" passHref>
+              <Image
+                src="/main.png"
+                alt="LINC logo"
+                width={80}
+                height={40}
+                className="object-contain cursor-pointer"
+                priority
+              />
+            </Link>
+          </div>
+
+          {/* Desktop Menu */}
+          <div
+            className="hidden md:flex text-black items-center space-x-0"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            <Link
+              href="/"
+              className="text-black/80 hover:text-black text-md transition-colors duration-200 px-3 py-3 rounded-full hover:bg-black/10"
+            >
+              Home
+            </Link>
+            <Link
+              href="/projects"
+              className="text-black/80 hover:text-black text-md transition-colors duration-200 px-3 py-3 rounded-full hover:bg-black/10"
+            >
+              Projects
+            </Link>
+            <Link
+              href="/team"
+              className="text-black/80 hover:text-black text-md transition-colors duration-200 px-3 py-3 rounded-full hover:bg-black/10"
+            >
+              People
+            </Link>
+            <Link
+              href="/publications"
+              className="text-black/80 hover:text-black text-md transition-colors duration-200 px-3 py-3 rounded-full hover:bg-black/10"
+            >
+              Publications
+            </Link>
+            <Link
+              href="/join"
+              className="text-black/80 hover:text-black text-md transition-colors duration-200 px-3 py-3 rounded-full hover:bg-black/10"
+            >
+              Join the Team
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-black py-2 pt-2 m-2 rounded-full hover:bg-black/10 transition-colors duration-200"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div
+            className="md:hidden mt-4 pt-4 py-4 border-t border-black/10"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            <div className="flex flex-col space-y-2">
               <Link
                 href="/"
-                aria-label="home"
-                className="flex items-center space-x-2"
+                className="text-black/80 hover:text-black transition-colors duration-200 px-4 py-2 rounded-xl hover:bg-black/10"
               >
-                <Logo />
+                Home
               </Link>
-
-              <button
-                onClick={() => setMenuState(!menuState)}
-                aria-label={menuState == true ? "Close Menu" : "Open Menu"}
-                className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
+              <Link
+                href="/projects"
+                className="text-black/80 hover:text-black transition-colors duration-200 px-4 py-2 rounded-xl hover:bg-black/10"
               >
-                <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
-                <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200" />
-              </button>
-
-              <div className="hidden lg:block">
-                <ul className="flex gap-8 text-sm">
-                  {menuItems.map((item, index) => (
-                    <li key={index}>
-                      <Link
-                        href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
-                      >
-                        <span>{item.name}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-              <div className="lg:hidden">
-                <ul className="space-y-6 text-base">
-                  {menuItems.map((item, index) => (
-                    <li key={index}>
-                      <Link
-                        href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
-                      >
-                        <span>{item.name}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button asChild variant="outline" size="sm">
-                  <Link href="#">
-                    <span>Login</span>
-                  </Link>
-                </Button>
-                <Button asChild size="sm">
-                  <Link href="#">
-                    <span>Sign Up</span>
-                  </Link>
-                </Button>
-                <ModeToggle />
-              </div>
+                Projects
+              </Link>
+              <Link
+                href="/team"
+                className="text-black/80 hover:text-black transition-colors duration-200 px-4 py-2 rounded-xl hover:bg-black/10"
+              >
+                People
+              </Link>
+              <Link
+                href="/publications"
+                className="text-black/80 hover:text-black transition-colors duration-200 px-4 py-2 rounded-xl hover:bg-black/10"
+              >
+                Publications
+              </Link>
+              <Link
+                href="/join"
+                className="text-black/80 hover:text-black transition-colors duration-200 px-4 py-2 rounded-xl hover:bg-black/10"
+              >
+                Join the Team
+              </Link>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        )}
+      </div>
+    </nav>
   );
 };
+
+export default HeroHeader;

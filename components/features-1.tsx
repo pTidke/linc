@@ -8,7 +8,7 @@ export default function Features() {
       <div className="@container mx-auto max-w-5xl px-6">
         <div className="text-center">
           <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-            Built to cover your needs
+            Research Thrusts
           </h2>
           <p className="mt-4">
             Libero sapiente aliquam quibusdam aspernatur, praesentium iusto
