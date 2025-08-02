@@ -127,7 +127,7 @@ export default function PeoplePage() {
                 </p>
                 <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
                   <li>
-                    M.S. in Construction Engineering, San Diego State University
+                    M.S. in Big Data Analytics, San Diego State University
                     (In Progress)
                   </li>
                   <li>
