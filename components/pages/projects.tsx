@@ -11,7 +11,7 @@ const projects = [
   {
     title: "LLM-Based Mental Health Support for Construction Workers",
     description:
-      "Mental health challenges such as depression, anxiety, and chronic stress are often hidden but more damaging to construction workers than any physical accident or injury. This project creates an AI-powered mental health support system using LLMs to offer compassionate, confidential, and 24/7 assistance tailored to the unique stressors of the construction industry.",
+      "Mental health challenges such as depression, anxiety, and chronic stress are often hidden but more damaging to construction workers than any physical accident or injury. Unfortunately, many workers don’t seek help due to stigma, access barriers, or cultural attitudes. This project aims to address that gap by creating an AI-powered mental health support system, using large language models (LLMs) to offer compassionate, confidential, and 24/7 assistance tailored to the unique stressors of the construction industry. By combining insights from psychiatry, construction safety, and AI, this project introduces a new model for accessible mental health care in blue-collar industries. The outcome will not only reduce stigma and improve mental well-being but also serve as a scalable, culturally aware intervention that supports retention, safety, and productivity of the construction workforce.",
     image: "/1.jpg",
     fields: ["Construction Engineering", "Computer Science", "Psychiatry"],
     image_credits: `Photo by <a href="https://unsplash.com/@emilyunderworld" target="_blank" rel="noopener noreferrer">Emily Underworld</a> on <a href="https://unsplash.com/photos/a-tablet-with-the-words-mental-health-matters-on-it-Ko3EMBFggok" target="_blank" rel="noopener noreferrer">Unsplash</a>`,
@@ -20,7 +20,7 @@ const projects = [
     title:
       "Wearable Sensing, Eating Behavior, and Lifestyle for Cardiovascular Health",
     description:
-      "Construction workers face unique cardiovascular risks due to labor, diet, and stress. This project uses wearables and behavioral sensing to monitor health indicators like glucose, HRV, and sleep—guiding real-time, proactive interventions via machine learning insights.",
+      "Cardiovascular disease (CVD) is a leading cause of death in the U.S., and construction workers are particularly vulnerable due to intense physical labor, poor dietary habits, irregular schedules, and chronic stress. These risk factors are often compounded by limited access to preventive care and early detection. This project develops a wearable-based system that continuously tracks cardiovascular indicators—such as glucose levels, heart rate variability, physical activity, and sleep patterns—while integrating insights from eating behavior and lifestyle. By applying machine learning to this data, we aim to detect early warning signs and provide personalized, real-time health guidance. The goal is to shift from reactive treatment to proactive care, improving worker well-being, extending career longevity, and enabling scalable health interventions in physically demanding industries like construction.",
     image: "/2.jpg",
     fields: [
       "Construction Engineering",
@@ -33,7 +33,7 @@ const projects = [
   {
     title: "Semi-Automated Teleoperation for Excavators",
     description:
-      "To reduce risk and improve control in hazardous environments, this project creates a semi-automated teleoperation system that blends eye-tracking, ML, and human-in-the-loop robotics for safer, intuitive excavator control.",
+      "Operating heavy machinery in construction environments demands both physical coordination and rapid decision-making. Yet in high-risk or confined sites, traditional on-site control poses significant safety and productivity challenges. While full automation holds promise, current robotic systems still lack the human-like judgment and adaptability required for dynamic construction tasks. This project introduces a semi-automated teleoperation system that blends the strengths of human cognition with robotic precision. By combining eye-tracking data with machine learning, we enable excavators to adapt to operator intent—adjusting sensitivity, task sequencing, and motion controls dynamically. The system combines input from cognitive science, robotics, and machine learning to ensure that remote operation is not only safe and efficient but also intuitive. This human-in-the-loop approach advances the frontier of collaborative robotics in construction, allowing operators to remain engaged, reduce fatigue, and perform complex tasks remotely in hazardous environments.",
     image: "/3.jpg",
     fields: ["Cognitive Science", "Robotics", "Construction Engineering"],
     image_credits: `Photo by <a href="https://unsplash.com/@eesofuffzich" target="_blank" rel="noopener noreferrer">EESOFUFFZICH</a> on <a href="https://unsplash.com/photos/yellow-and-black-excavator-on-brown-sand-during-daytime-bGMyTnSlYvE" target="_blank" rel="noopener noreferrer">Unsplash</a>`,
@@ -71,7 +71,8 @@ export default function ProjectsPage() {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               {/* Image */}
-              <div className="w-full md:w-3/4">
+              {/* Image with overlay */}
+              <div className="relative w-full md:w-3/4">
                 <Image
                   src={project.image || placeholderImage}
                   alt={project.title}
@@ -79,6 +80,12 @@ export default function ProjectsPage() {
                   height={220}
                   className="rounded-lg object-cover w-full shadow"
                 />
+                {project.image_credits && (
+                  <div
+                    className="absolute bottom-2 left-2 right-2 bg-white/50 backdrop-blur-xl px-3 py-1 rounded-md text-[9px] text-gray-700"
+                    dangerouslySetInnerHTML={{ __html: project.image_credits }}
+                  />
+                )}
               </div>
 
               {/* Text */}
@@ -100,14 +107,6 @@ export default function ProjectsPage() {
                     </span>
                   ))}
                 </div>
-
-                {/* Image credits */}
-                {project.image_credits && (
-                  <p
-                    className="text-xs ml-2 text-gray-400"
-                    dangerouslySetInnerHTML={{ __html: project.image_credits }}
-                  />
-                )}
               </div>
             </motion.div>
           ))}
