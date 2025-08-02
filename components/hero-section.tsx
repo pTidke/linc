@@ -91,7 +91,7 @@ export default function HeroSection() {
       line.setAttribute("x2", x2.toString());
       line.setAttribute("y2", y2.toString());
       line.setAttribute("stroke", "#BA0C2F");
-      line.setAttribute("stroke-width", "2");
+      line.setAttribute("stroke-width", "1");
       line.setAttribute("stroke-linecap", "round");
 
       svg.appendChild(line);
@@ -169,7 +169,7 @@ export default function HeroSection() {
                   and more productive construction environments.
                 </p>
 
-                <div className="mt-6 flex flex-row flex-wrap gap-4 justify-center lg:justify-start">
+                <div className="mt-6 flex flex-row flex-wrap gap-2 justify-center lg:justify-start">
                   <Link href="/projects">
                     <Button className="bg-[#BA0C2F] text-white hover:bg-[#a50c28] transition-colors duration-200 px-6 py-3 text-sm font-semibold rounded-full">
                       Explore Research
@@ -326,7 +326,7 @@ export default function HeroSection() {
             </div>
 
             {/* 📱 Mobile: Header + Single rotating thrust card */}
-            <div className="block md:hidden mt-6">
+            <div className="block md:hidden mt-0">
               <h3
                 className="text-center text-lg font-semibold text-[#BA0C2F] mb-4"
                 style={{ fontFamily: "Poppins, sans-serif" }}
