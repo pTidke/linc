@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title:
-      "Wearable Sensing, Eating Behavior, and Lifestyle for Workers’ cardiovascular health",
+      "Wearable Sensing, Eating Behavior, and Lifestyle for Workers’ Cardiovascular Health",
     description:
     "Cardiovascular disease (CVD) is one of the leading cause of death in the U.S., and construction workers are particularly vulnerable due to intense physical labor, poor dietary habits, irregular schedules, and chronic stress. These risk factors are often compounded by limited access to preventive care and early detection. This project aims to understand how we could apply wearables to continuously tracks cardiovascular indicators—such as glucose levels, heart rate variability, physical activity, and sleep patterns—while integrating insights from eating behavior and lifestyle. Ultimately, we aim to detect early warning signs and provide personalized, real-time health guidance, enabling scalable health interventions for cardiovascular well-being in construction",      image: "/2.jpg",
     fields: [
