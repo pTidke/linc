@@ -35,12 +35,12 @@ export default function JoinTeam() {
                 Required Qualifications:
               </h2>
               <ul className="space-y-2 text-sm text-gray-800 list-disc list-inside">
+
                 <li>
-                  <strong>Interdisciplinary Curiosity</strong> (Top priority)
+                  <strong>Genuine Curiosity about human and interdicsplinary topics</strong> (Top priority)
                 </li>
                 <li>
-                  Eagerness to connect theory with real-world challenges in
-                  construction, health, or technology
+                <strong>Strong self-motivation</strong>, collaborative mindset, and communication skills
                 </li>
                 <li>Collaboration and Communication Skills</li>
                 <li>
@@ -67,22 +67,29 @@ export default function JoinTeam() {
               </ul>
             </div>
 
-            <div>
+            <div className="space-y-4">
               <h2 className="text-md font-semibold text-[#BA0C2F] mb-2">
-                Application Instructions:
+              Program Details & Application:
               </h2>
               <p className="text-gray-800 text-sm">
-                Email Dr. JuHyeon Bae at{" "}
-                <a
-                  href="mailto:jbae3@sdsu.edu"
-                  className="text-[#BA0C2F] font-medium underline hover:text-red-700"
-                >
-                  jbae3@sdsu.edu
-                </a>{" "}
-                with your CV and a brief explanation of why you&apos;re a great
-                fit for LINC.
+              The selected student will enroll in the SDSU–UCSD Joint Doctoral Program, pursuing 
+              a Ph.D. in either Computer Engineering or Structural (Civil) Engineering, depending on research alignment. 
+              To apply, please email Dr. Juhyeon Bae (jbae3@sdsu.edu)
+               with a brief self-introduction and the following materials combined into one PDF file:
               </p>
+              <ul className="space-y-2 text-sm text-gray-800 list-disc list-inside">
+
+                <li>
+                A 1-page research statement (as the first page).
+                </li>
+                <li>
+                A detailed C.V. (starting on the second page).
+                </li>
+   
+              </ul>
+
             </div>
+
           </div>
 
           <div className="mt-12">

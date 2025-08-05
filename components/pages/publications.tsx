@@ -53,6 +53,13 @@ const conferencePapers = [
   },
 ];
 
+const Patent = [
+  {
+    text: `<strong>Bae, J.</strong>, Lee, G., and Lee, S. (2025). "Whole-body physical fatigue monitoring with heart rate." US Patent #US20250127410A1.`,
+    doi: null,
+  },
+];
+
 export default function PublicationsPage() {
   return (
     <div id="publications" className="min-h-screen flex flex-col">
@@ -92,7 +99,7 @@ export default function PublicationsPage() {
         </section>
 
         {/* Conference Papers */}
-        <section>
+        <section className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6 font-[Poppins]">
             Refereed Conference Proceedings
           </h2>
@@ -119,6 +126,38 @@ export default function PublicationsPage() {
             ))}
           </ul>
         </section>
+
+      {/* Patent*/}
+        <section>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 font-[Poppins]">
+            Patent
+          </h2>
+          <ul className="space-y-5 text-sm text-justify leading-relaxed text-gray-800 list-disc list-inside">
+            {Patent.map((entry, idx) => (
+              <li key={idx}>
+                <span dangerouslySetInnerHTML={{ __html: entry.text }} />
+                {entry.doi && (
+                  <>
+                    {" "}
+                    (
+                    <a
+                      href={`https://doi.org/${entry.doi}`}
+                      className="text-[#BA0C2F] underline hover:text-[#90001f]"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      DOI: {entry.doi}
+                    </a>
+                    )
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+
+
       </main>
       <Footer />
     </div>
