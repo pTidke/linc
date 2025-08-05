@@ -19,7 +19,7 @@ export default function JoinTeam() {
             <strong className="text-[#BA0C2F]">
               fully-funded Ph.D. student
             </strong>{" "}
-            to join LINC starting September 2026. The position is part of a{" "}
+            to join LINC starting August 2026. The position is part of a{" "}
             <strong>joint doctoral program</strong> between{" "}
             <strong>SDSU</strong> and <strong>UCSD</strong>. Come explore
             human-centered construction research at the intersection of{" "}
@@ -37,12 +37,11 @@ export default function JoinTeam() {
               <ul className="space-y-2 text-sm text-gray-800 list-disc list-inside">
 
                 <li>
-                  <strong>Genuine Curiosity about human and interdicsplinary topics</strong> (Top priority)
+                  <strong>Genuine Curiosity about Human and Interdicsplinary Topics</strong> (Top priority)
                 </li>
                 <li>
-                <strong>Strong self-motivation</strong>, collaborative mindset, and communication skills
+                <strong>Strong self-motivation</strong>, Collaborative Mindset, and Communication Skills
                 </li>
-                <li>Collaboration and Communication Skills</li>
                 <li>
                   Technical Proficiency (e.g., ML, LLM, wearable sensing,
                   robotics, etc.)
@@ -75,7 +74,7 @@ export default function JoinTeam() {
               The selected student will enroll in the SDSU–UCSD Joint Doctoral Program, pursuing 
               a Ph.D. in either Computer Engineering or Structural (Civil) Engineering, depending on research alignment. 
               To apply, please email Dr. Juhyeon Bae (jbae3@sdsu.edu)
-               with a brief self-introduction and the following materials combined into one PDF file:
+               with a brief self-introduction and the following materials combined into <strong>one PDF file</strong>:
               </p>
               <ul className="space-y-2 text-sm text-gray-800 list-disc list-inside">
 

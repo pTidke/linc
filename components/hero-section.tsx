@@ -15,14 +15,14 @@ const thrusts = [
   {
     title: "LLM-Based Mental Health Support for Construction Workers",
     description:
-      "Harnessing the power of large language models to deliver personalized, confidential mental health support for construction workers — anytime, anywhere.",
+      "Harnessing the power of LLMs to deliver personalized, confidential mental health support for construction workers.",
     disciplines: ["Construction Engineering", "Computer Science", "Psychiatry"],
   },
   {
     title:
-      "Wearable Sensing, Eating Behavior, and Lifestyle for Construction workers’ cardiovascular health",
+      "Wearable Sensing, Eating Behavior, and Lifestyle for Workers’ Cardiovascular Health",
     description:
-      "Revolutionizing worker health with smart wearables that monitor, analyze, and guide cardiovascular wellness on the job.",
+      "Understanding worker health with smart wearables that monitor, analyze, and guide cardiovascular wellness on the job.",
     disciplines: [
       "Construction Engineering",
       "Computer Science",
@@ -33,7 +33,7 @@ const thrusts = [
   {
     title: "Semi-Automated Teleoperation for Excavators",
     description:
-      "Building smarter machines with human-in-the-loop control — blending robotics and cognitive science to enable safer, remote construction operations.",
+      "Combining robotics and cognitive science to enable safer, remote construction operations.",
     disciplines: [
       "Construction Engineering",
       "Computer Science",
